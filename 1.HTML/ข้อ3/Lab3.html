@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทำแบบฟอร์มสั่ง pizza</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .shop {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .delivery {
+            grid-column: 1 / span 2;
+            grid-row: 6;
+        }
+
+        .submit {
+            grid-column: 1 / span 2;
+            grid-row: 7;
+        }
+
+        .PizzaForm form {
+            display: grid;
+            width: 500px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        textarea {
+            display: block;
+            width: 490px;
+        }
+
+        .PizzaForm div {
+            border: 2px double grey;
+            padding: 5px 3px;
+        }
+
+        input[type=text],
+        select {
+            width: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="PizzaForm">
+        <form action="">
+            <div class="shop"><label for=""><strong>Pizza Shop 2.0</strong></label></div>
+
+            <div><label for="">Name</label></div>
+            <div><input type="text"></div>
+
+            <div><label for="">Pizza Topping</label></div>
+            <div>
+                <input type="radio" name="topping" value="supreme"> Supreme
+                <input type="radio" name="topping" value="vegetarian"> Vegetarian
+                <input type="radio" name="topping" value="hawaiian"> Hawaiian
+            </div>
+
+            <div><label for="">Pizza Sauce</label></div>
+            <div>
+                <select name="sauce" id="">
+                    <option value="tomato"> Tomato</option>
+                    <option value="barbeque"> Barbeque</option>
+                    <option value="mayonnaise"> Mayonnaise</option>
+                    <option value="secret"> Secret Sauce</option>
+                </select>
+            </div>
+
+            <div><label for="">Optional Extras</label></div>
+            <div>
+                <input type="checkbox" name="extra_cheese" value="1"> Extra Cheese
+                <input type="checkbox" name="gluten_free" value="1"> Gluten Free Base
+            </div>
+
+            <div class="delivery">
+                <label for="">Delivery Instructions : </label>
+                <textarea name="" id="" cols="50" rows="4"></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Send my Order">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review1</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        th {
+            height: 30px;
+            font-size: 18px;
+            background-color: LightBlue;
+        }
+
+        td {
+            padding: 3px 13px;
+            vertical-align: top;
+        }
+
+        h4 {
+            text-decoration: underline;
+        }
+
+        .sample {
+            margin-left: 100px;
+        }
+
+        ul+p {
+            color: red;
+        }
+
+        a:hover {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <h3>Review 1</h3>
+            <thead>
+                <tr>
+                    <th>CSS syntax ประกอบด้วย</th>
+                    <th>การเขียน CSS</th>
+                    <th>Selector</th>
+                    <th>Combinator</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>selector{property:value}</p>
+                        <p>Selector คือ ส่วน HTML tag ที่เราต้องการจะให้แสดงผล เช่น &lt;table&gt;
+                            ก็จะแสดงผลในส่วนของตาราง</p>
+                        <p>Property คือ ส่วนของคุณสมบัติที่เราต้องการให้แสดง เช่น สีตัวอักษร , ชนิดตัวอักษร ,
+                            ขนาดตัวอักษร</p>
+                        <p>Value คือ ค่าที่เราต้องการให้แสดง เช่น ตัวอักษรสีแดง , ตัวอักษรแบบ tahoma , ตัวอักษรขนาด 12
+                            pt</p>
+
+                        <p>table{border:1px solid #C00;} <br>
+                            Selector คือ table หมายถึง ต้องการกำหนดลักษณะให้กับแท็ก table <br>
+                            Property คือ border หมายถึง สิ่งที่ต้องการกำหนดให้กับ table นั่นก็คือ ขอบ(border) <br>
+                            Value คือ 1px หมายถึง 1px มีลักษณะเป็นเส้นเดียว solid มีสีเป็น C00 สีแดงเข้ม ๆ </p>
+                    </td>
+
+                    <td>
+                        <p>Inline Style Sheet การเขียนแทรกลงไปในบรรทัดนั้นๆ ของ tag HTML เลย</p>
+                        <p>Embed Style Sheet การเขียนแบบ Internal (embedded) คือเขียนแยก CSS ออกจาก tag HTML
+                            แต่อยู่ในหน้าเดียวกันกับไฟล์ HTML โดยแทรก css เอาไว้ที่ &lt;head&gt&lt;/head&gt</p>
+                        <p>External Style Sheet การเขียน แยก css ออกมาเป็นไฟล์ .css ต่างหาก แล้วนำเข้าไปใช้ใน
+                            หน้าเว็บด้วย
+                            การเรียกโดย ใช้ โดยการพิมพ์ &lt;link rel="stylesheet" href="externalcss.css" type="text/css"
+                            /&lt; ไว้ที่ส่วน &lt;head&gt&lt;/head&gt</p>
+                    </td>
+
+                    <td>
+                        <p>ID Selectors : การกำหนดชื่อของ element โดยจะมีได้แค่ element เดียวเท่านั้น
+                            เขียนได้โดยการเขียนชื่อ Selector ตามหลังเครื่องหมายชาร์ป (#)</p>
+                        <p>Class Selectors : การกำหนดชื่อของ element โดยสามารถมีได้หลาย element เขียนได้โดยการ ตั้งชื่อ
+                            Selector ไว้หลังเครื่องหมายจุด หรือ Dot (.)</p>
+                        <p>Pseudo element : การกำหนดเฉพาะบางส่วนของ element</p>
+                        <p>Pseudo class : การกำหนดเฉพาะบางสถานะของ class</p>
+                        <p>Combinators : การกำหนดเงื่อนระหว่าง 2 selector</p>
+                        <p>Attribute selector : การกำหนดการเลือกชื่อ attribute ใน element</p>
+                    </td>
+
+                    <td>
+                        <p>descendant selector (space) <br> a b = tag b ทั้งหมดที่อยู่ใน a </p>
+                        <p>child selector (>) <br> a > b = tag b ที่เป็นลูกของ a</p>
+                        <p>adjacent sibling selector (+) <br> a + b = tag b ที่อยู่ล่าง a และติดกับ a เท่านั้น</p>
+                        <p>general sibling selector (~) <br> a ~ b = tag b ที่อยู่ล่าง a ทุก tag เช่น h1~p { } คือ
+                            ให้กระทำการใดๆ กับ p ที่อยู่หลัง h1
+                            ไม่ว่าจะอยู่ในลำดับที่เท่าไร</p>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="sample">
+            <h3>sample</h3>
+
+            <h4>Pseudo class</h4>
+
+            a:hover{ <br>
+            background-color: greenyellow; <br>
+            } <br><br>
+
+            <a href="javascript:void(0)">LEFT</a> &nbsp;
+            <a href="javascript:void(0)">RIGHT</a>
+
+            <p><span style="background-color: goldenrod;">element ที่ถูกเอาเมาส์ไปวาง จะมีสถานะ background สี
+                    greenyellow</span> </p>
+
+            <hr>
+
+            <h4> adjacent sibling selector (+)</h4>
+            <p>ให้กระทำการใดๆ กับ section ที่อยู่ต่อจาก section ที่เป็นพี่เท่านั้น</p>
+            ul + p { <br>
+            color: red;<br>
+            }<br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <ul>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, ratione excepturi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non beatae?</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, itaque cum.</li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <p><span style="background-color: goldenrod;">ในกรณีนี้ เฉพาะ paragraph แรกที่ติดต่อหลังจาก ul
+                    แต่ละตัวจะแสดงสีแดง</span> </p>
+
+            <hr>
+
+        </div>
+    </div>
+</body>
+
+</html>

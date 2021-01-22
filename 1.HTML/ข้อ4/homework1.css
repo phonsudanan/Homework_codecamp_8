@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.menu{
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+.menu a{
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: crimson;
+    font-size: 30px;
+}
+
+.content-index , .profile{
+    text-align: center;
+    padding: 20px;
+}
+
+.content-index img, .profile>img{
+    width: 300px;
+    border: 10px double brown;
+    border-radius: 40px;
+}
+
+.content-index p{
+    font-size: 18px;
+}
+
+.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.hobby img{
+    display: block;
+    width: 290px;
+    border-radius: 30px;
+    margin: 5px;
+}

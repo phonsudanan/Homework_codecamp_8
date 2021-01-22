@@ -50,6 +50,30 @@ body{
 .hobby img{
     display: block;
     width: 290px;
-    border-radius: 30px;
+    border: 05px solid white;
+    border-radius: 20px;
     margin: 5px;
+}
+
+.content--frind{
+}
+
+table,th,td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    /* table-layout: fixed; */
+    width: 100%;
+}
+
+th {
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(134, 64, 6, 0.685);
+}
+
+td {
+    padding: 3px 13px;
 }

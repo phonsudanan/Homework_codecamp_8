@@ -1,14 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework3</title>
     <style>
-        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            /* table-layout: fixed; */
+            width: 100%;
+        }
+
+        th {
+            height: 30px;
+            font-size: 18px;
+            background-color: LightBlue;
+        }
+
+        td {
+            padding: 10px 15px;
+            vertical-align: top;
+        }
+
+        @media only screen and (max-width: 550px) {
+            .container {
+                grid-template-columns: auto;
+            }
+        }
+
+        @media only screen and (min-width: 561px) and (max-width: 840) {
+            .container {
+                grid-template-columns: repeat(2, auto);
+            }
+        }
+
+        @media only screen and (min-width: 841px) {
+            .container {
+                grid-template-columns: repeat(3, auto);
+            }
+        }
     </style>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Tel no.</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Pizza Hut</td>
+                    <td>1150</td>
+                </tr>
+                <tr>
+                    <td>KFC</td>
+                    <td>1150</td>
+                </tr>
+                <tr>
+                    <td>The Pizza Company</td>
+                    <td>1112</td>
+                </tr>
+                <tr>
+                    <td>Burger King</td>
+                    <td>1112</td>
+                </tr>
+                <tr>
+                    <td>Sizzler</td>
+                    <td>1112</td>
+                </tr>
+                <tr>
+                    <td>Swensen’s</td>
+                    <td>1112</td>
+                </tr>
+                <tr>
+                    <td>Dairy queen</td>
+                    <td>1112</td>
+                </tr>
+                <tr>
+                    <td>S&P</td>
+                    <td>1344</td>
+                </tr>
+                <tr>
+                    <td>MK restaurant</td>
+                    <td>1642</td>
+                </tr>
+                <tr>
+                    <td>Yayoi</td>
+                    <td>1642</td>
+                </tr>
+                <tr>
+                    <td>Mcdonald</td>
+                    <td>1711</td>
+                </tr>
+                <tr>
+                    <td>Oishi</td>
+                    <td>1773</td>
+                </tr>
+                <tr>
+                    <td>Peper Lunch</td>
+                    <td>1312</td>
+                </tr>
+                <tr>
+                    <td>OOTOYA</td>
+                    <td>1312</td>
+                </tr>
+                <tr>
+                    <td>Domino’s Pizza</td>
+                    <td>1612</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
 </body>
+
 </html>

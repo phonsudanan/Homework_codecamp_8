@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -38,6 +40,10 @@ body{
 
 .content-index p{
     font-size: 18px;
+}
+
+.content-profile{
+    margin-top: 20px;
 }
 
 .social img{
@@ -84,28 +90,35 @@ body{
     opacity : 0.5;
 }
 
-.hobby-slides img:hover, img:active{
+.hobby-slides .active, img:hover{
     opacity : 1;
 }
 
+.content--frind {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
 
 
-table,th,td {
+
+.content--frind table,th,td {
     border: 1px solid black;
 }
 
-table {
+.content--frind table {
     border-collapse: collapse;
     /* table-layout: fixed; */
     width: 100%;
+    margin-top: 20px;
 }
 
-th {
+.content--frind th {
     height: 30px;
     font-size: 18px;
     background-color: rgba(134, 64, 6, 0.685);
 }
 
-td {
+.content--frind td {
     padding: 3px 13px;
 }

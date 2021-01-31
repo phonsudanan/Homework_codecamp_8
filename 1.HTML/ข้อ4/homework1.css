@@ -48,26 +48,47 @@ body{
 .social img:hover{
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
-    width: 55px;
 }
 
-.hobby {
+.hobby{
     display: flex;
-    flex-wrap: wrap;
-    
-    
+    padding: 20px;
 }
 
 .hobby img{
-    display: block;
-    width: 290px;
-    border: 05px solid white;
-    border-radius: 20px;
-    margin: 5px;
+    width: 100%;
 }
 
-.content--frind{
+.hobby .show-Slides {
+    width: 70%;
+    float: left;
+    border: 5px solid white;
+    border-radius: 20px;
+    display: none;
+    margin: auto;
 }
+
+.hobby-slides{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+
+.hobby-slides img{
+    width: 150px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity : 0.5;
+}
+
+.hobby-slides img:hover, img:active{
+    opacity : 1;
+}
+
+
 
 table,th,td {
     border: 1px solid black;

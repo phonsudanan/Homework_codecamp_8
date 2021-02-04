@@ -26,9 +26,9 @@ body {
   text-decoration: none;
 }
 
-/* .menu a:hover, a.active{
+.menu a:hover, a.active{
     background-color: crimson;
-} */
+}
 
 li .active {
   background-color: #4caf50;
@@ -49,6 +49,8 @@ li .active {
 .content-index p {
   font-size: 18px;
   margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(102, 2, 2);
 }
 
 .me {
@@ -91,6 +93,12 @@ li .active {
   color: rgb(102, 2, 2);
 }
 
+.myFriend h2, h3, .myProfile{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(102, 2, 2);
+  margin-top: 10px;
+}
+
 .hobby {
   display: flex;
   padding: 20px;
@@ -115,7 +123,7 @@ li .active {
   display: flex;
   flex-direction: column;
   margin-right: 5%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .hobby-slides img {
@@ -142,7 +150,7 @@ img:hover {
 
 .content-friend {
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
   width: 900px;
   margin: auto;
 }

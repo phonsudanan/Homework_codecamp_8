@@ -10,89 +10,98 @@
 
 <body>
 
-    <div class="menu">
-        <a href="./index.html">Homepage</a>
-        <a href="./profile.html">Profile</a>
-        <a href="./friends.html">Friends</a>
-    </div>
+    <ul class="menu">
+        <li><a onclick=" menuActive()" href="./index.html">Homepage</a></li>
+        <li><a onclick=" menuActive()" href="./profile.html">Profile</a></li>
+        <li><a onclick=" menuActive()" href="./friends.html">Friends</a></li>
+    </ul>
 
     <div class="profile">
-        <img src="./Img/avatar.png" alt="me">
-        <div class="content-profile">
-            <p><strong> ชื่อ : </strong>พรสุดา นาเลิง</p>
-            <p><strong> เกิด : </strong>25 มกราคม 2537</p>
-            <p><strong>ชื่อเล่น : </strong>แนน</p>
-            <p><strong>งานอดิเรก : </strong>ถ่ายรูป</p>
-
-            <div class="social">
-                <a href="https://www.facebook.com/phonsuda.naloeng/" target="_blank"><img src="./Img/1.facebook.png"
-                        alt="facebook"></a>
-                <a href="https://www.instagram.com/aloha_artvirus/" target="_blank"><img src="./Img/2.ig.png"
-                        alt="ig"></a>
-                <a href="https://line.me/ti/p/GIw5MKKFT_" target="_blank"><img src="./Img/3.line.png" alt="line"></a>
-            </div>
-
-            <div class="hobby">
-                <img class="show-Slides" src="./Img/hobby/1-1.jpg" style="display:block">
-                <img class="show-Slides" src="./Img/hobby/1-2.jpg">
-                <img class="show-Slides" src="./Img/hobby/1-3.jpg">
-                <img class="show-Slides" src="./Img/hobby/1-4.jpg">
-                <img class="show-Slides" src="./Img/hobby/2-1.jpg">
-                <img class="show-Slides" src="./Img/hobby/2-2.jpg">
-                <img class="show-Slides" src="./Img/hobby/2-3.jpg">
-                <img class="show-Slides" src="./Img/hobby/2-4.jpg">
-                <img class="show-Slides" src="./Img/hobby/3-1.jpg">
-                <img class="show-Slides" src="./Img/hobby/3-2.jpg">
-                <img class="show-Slides" src="./Img/hobby/3-3.jpg">
-                <img class="show-Slides" src="./Img/hobby/3-4.jpg">
-
-                <div class="hobby-slides">
-                    <img class="slides" onclick="currentSlide(1)" src="./Img/hobby/1-1.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(2)" src="./Img/hobby/1-2.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(3)" src="./Img/hobby/1-3.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(4)" src="./Img/hobby/1-4.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(5)" src="./Img/hobby/2-1.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(6)" src="./Img/hobby/2-2.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(7)" src="./Img/hobby/2-3.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(8)" src="./Img/hobby/2-4.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(9)" src="./Img/hobby/3-1.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(10)" src="./Img/hobby/3-2.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(11)" src="./Img/hobby/3-3.jpg" alt="">
-                    <img class="slides" onclick="currentSlide(12)" src="./Img/hobby/3-4.jpg" alt="">
-
-                </div>
+        <div class="me">
+            <img src="./Img/avatar.png" alt="me">
+            <div class="content-profile">
+                <p><strong> ชื่อ : </strong>พรสุดา นาเลิง</p>
+                <p><strong>ชื่อเล่น : </strong>แนน</p>
+                <p><strong> เกิด : </strong>25 มกราคม 2537</p>
+                <p><strong> ที่อยู่ : </strong>สมุทรปราการ</p>
+                <p><strong>งานอดิเรก : </strong>ถ่ายรูป, ดูหนัง</p>
             </div>
         </div>
+        <div class="social">
+            <a href="https://www.facebook.com/phonsuda.naloeng/" target="_blank"><img src="./Img/1.facebook.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com/aloha_artvirus/" target="_blank"><img src="./Img/2.ig.png" alt="ig"></a>
+            <a href="https://line.me/ti/p/GIw5MKKFT_" target="_blank"><img src="./Img/3.line.png" alt="line"></a>
+        </div>
+        <hr>
 
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
+        <h2 class="myHobby">My Hobby</h2>
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+        <div class="hobby">
+
+            <img class="show-Slides" src="./Img/hobby/1-1.jpg" style="display:block">
+            <img class="show-Slides" src="./Img/hobby/1-2.jpg">
+            <img class="show-Slides" src="./Img/hobby/1-3.jpg">
+            <img class="show-Slides" src="./Img/hobby/1-4.jpg">
+            <img class="show-Slides" src="./Img/hobby/2-1.jpg">
+            <img class="show-Slides" src="./Img/hobby/2-2.jpg">
+            <img class="show-Slides" src="./Img/hobby/2-3.jpg">
+            <img class="show-Slides" src="./Img/hobby/2-4.jpg">
+            <img class="show-Slides" src="./Img/hobby/3-1.jpg">
+            <img class="show-Slides" src="./Img/hobby/3-2.jpg">
+            <img class="show-Slides" src="./Img/hobby/3-3.jpg">
+            <img class="show-Slides" src="./Img/hobby/3-4.jpg">
+
+            <div class="hobby-slides">
+                <img class="slides" onclick="currentSlide(1)" src="./Img/hobby/1-1.jpg" alt="">
+                <img class="slides" onclick="currentSlide(2)" src="./Img/hobby/1-2.jpg" alt="">
+                <img class="slides" onclick="currentSlide(3)" src="./Img/hobby/1-3.jpg" alt="">
+                <img class="slides" onclick="currentSlide(4)" src="./Img/hobby/1-4.jpg" alt="">
+                <img class="slides" onclick="currentSlide(5)" src="./Img/hobby/2-1.jpg" alt="">
+                <img class="slides" onclick="currentSlide(6)" src="./Img/hobby/2-2.jpg" alt="">
+                <img class="slides" onclick="currentSlide(7)" src="./Img/hobby/2-3.jpg" alt="">
+                <img class="slides" onclick="currentSlide(8)" src="./Img/hobby/2-4.jpg" alt="">
+                <img class="slides" onclick="currentSlide(9)" src="./Img/hobby/3-1.jpg" alt="">
+                <img class="slides" onclick="currentSlide(10)" src="./Img/hobby/3-2.jpg" alt="">
+                <img class="slides" onclick="currentSlide(11)" src="./Img/hobby/3-3.jpg" alt="">
+                <img class="slides" onclick="currentSlide(12)" src="./Img/hobby/3-4.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("show-Slides");
+            var dots = document.getElementsByClassName("slides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            //captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
 
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("show-Slides");
-                var dots = document.getElementsByClassName("slides");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
-            }
-        </script>
+        
+        
+    </script>
 
 </body>
 

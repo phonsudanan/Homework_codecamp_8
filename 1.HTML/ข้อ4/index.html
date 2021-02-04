@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./homework1.css">
 </head>
+
 <body>
     <div>
-        <div class="menu">
-            <a href="./index.html">Homepage</a>
-            <a href="./profile.html">Profile</a>
-            <a href="./friends.html">Friends</a>
-        </div>
+        <ul class="menu">
+            <li><a onclick=" menuActive()" href="./index.html">Homepage</a></li>
+            <li><a onclick=" menuActive()" href="./profile.html">Profile</a></a></li>
+            <li><a onclick=" menuActive()" href="./friends.html">Friends</a></li>
+        </ul>
 
         <div class="content-index">
             <img src="./Img/me.jpg" alt="ภาพที่แสดงความเป็นตัวเอง">
@@ -21,6 +23,14 @@
             <p>เราไม่สามารถบังคับทิศทางลมได้ แต่เราสามารถบังคับเรือให้ไปสู่จุดหมายปลายทางได้</p>
         </div>
     </div>
-    
+
+    <script>
+        function menuActive() {
+            document.getElementById("menu").replaceWith.menuActive
+        }
+
+    </script>
+
 </body>
+
 </html>

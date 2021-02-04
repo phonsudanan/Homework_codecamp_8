@@ -1,127 +1,178 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: antiquewhite;
+body {
+  background-color: antiquewhite;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.menu{
-    display: inline-block;
-    width: 100%;
-    background-color: black;
-    padding: 20px;
+.menu {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
 }
 
-.menu a{
-    color: white;
-    padding: 20px;
-    font-size: 28px;
-    text-decoration: none;
+.menu li {
+  display: inline-block;
 }
 
-.menu a:hover{
+.menu a {
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+/* .menu a:hover, a.active{
     background-color: crimson;
-    font-size: 30px;
+} */
+
+li .active {
+  background-color: #4caf50;
 }
 
-.content-index , .profile{
-    text-align: center;
-    padding: 20px;
+.content-index {
+  text-align: center;
+  padding: 20px;
 }
 
-.content-index img, .profile>img{
-    width: 300px;
-    border: 10px double brown;
-    border-radius: 40px;
+.content-index img,
+.me > img {
+  width: 300px;
+  border: 10px double brown;
+  border-radius: 40px;
 }
 
-.content-index p{
-    font-size: 18px;
+.content-index p {
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-.content-profile p{
-    margin-top: 10px;
+.me {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.social img{
-    width: 50px;
-    margin: 10px;
+.content-profile {
+  width: 300px;
+  margin-left: 50px;
+  align-self: center;
 }
 
-.social img:hover{
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
+.content-profile p {
+  margin-top: 10px;
 }
 
-.hobby{
-    display: flex;
-    padding: 20px;
-    height: 650px;
+.social {
+  text-align: center;
 }
 
-.hobby img{
-    width: 100%;
+.social img {
+  width: 50px;
+  margin: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social img:hover {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.myHobby {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 40px;
+  font-size: 30px;
+  color: rgb(102, 2, 2);
+}
+
+.hobby {
+  display: flex;
+  padding: 20px;
+  height: 650px;
+}
+
+.hobby img {
+  width: 100%;
 }
 
 .hobby .show-Slides {
-    width: 70%;
-    height: 600px;
-    float: left;
-    border: 5px solid white;
-    border-radius: 20px;
-    display: none;
-    margin: auto;
+  width: 70%;
+  height: 600px;
+  float: left;
+  border: 5px solid white;
+  border-radius: 20px;
+  display: none;
+  margin: auto;
 }
 
-.hobby-slides{
-    display: flex;
-    flex-direction: column;
-    margin-right: 5%;
-    overflow: scroll;
+.hobby-slides {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  overflow: scroll;
 }
 
-
-.hobby-slides img{
-    width: 150px;
-    cursor: pointer;
-    margin: 5px;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    opacity : 0.5;
+.hobby-slides img {
+  width: 150px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
 
-.hobby-slides .active, img:hover{
-    opacity : 1;
+.hobby-slides .active,
+img:hover {
+  opacity: 1;
 }
 
-.content-frind {
-    width: 90%;
-    margin: auto;
-    margin-top: 40px;
+.content {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 50px 0 20px 0;
 }
 
-
-
-.content-frind table,th,td {
-    border: 1px solid black;
+.content-friend {
+  display: flex;
+  overflow: scroll;
+  width: 900px;
+  margin: auto;
 }
 
-.content-frind table {
-    border-collapse: collapse;
-    /* table-layout: fixed; */
-    width: 100%;
-    margin-top: 20px;
+.content-friend img {
+  width: 300px;
+  border-radius: 15px 0 0 15px;
 }
 
-.content-frind th {
-    height: 30px;
-    font-size: 18px;
-    background-color: rgba(134, 64, 6, 0.685);
+.content-friend > div {
+  display: flex;
+  border: 7px double  brown;
+  border-radius: 15px;
+  margin-right: 20px;
+  background-color: white;
+  
 }
 
-.content-frind td {
-    padding: 3px 13px;
+.data {
+  width: 300px;
+  padding-left: 20px;
+  align-self: center;
+}
+
+.data > p {
+  margin-top: 10px;
+}
+
+.search input {
+  width: 200px;
+  height: 30px;
+  margin-top: 15px;
 }

@@ -184,3 +184,11 @@ img:hover {
   height: 30px;
   margin-top: 15px;
 }
+
+.search button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: brown;
+  border: none;
+}

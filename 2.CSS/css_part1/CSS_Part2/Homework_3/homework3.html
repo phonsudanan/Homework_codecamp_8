@@ -1,12 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>facebook register</title>
+    <script src="https://kit.fontawesome.com/7b5876c74b.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sarabun:wght@100;200;400;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Sarabun", Times, serif;
+        }
+
+        .index {
+            padding: 18vh 0 30vh 0;
+            background-color: #f2f6fd;
+        }
+
+        .content {
+            display: flex;
+            margin: 0 10vh;
+            align-items: center;
+        }
+
+        .left {
+            width: 400px;
+            margin-left: 10%;
+        }
+
+        .logo {
+            color: #0066FF;
+            font-family: "Poppins", Times, serif;
+            font-size: 52px;
+        }
+
+        .left h2 {
+            font-size: 26px;
+            font-weight: 400;
+        }
+
+        .right {
+            margin-left: 10%;
+        }
+
+        .login {
+            width: 360px;
+            border-radius: 7px;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            display: inline-block;
+            font-size: 20px;
+            border-radius: 7px;
+            margin-bottom: 13px;
+        }
+
+        input[type=text],
+        [type=password] {
+            padding: 13px 20px;
+            width: 318px;
+            border: 1px solid rgb(223, 223, 223);
+        }
+
+        input[type=submit] {
+            display: block;
+            color: rgb(240, 240, 240);
+            font-weight: 800;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            background-color: #0066FF;
+            width: 100%;
+        }
+
+        .register {
+            margin: 20px 0 4px 0;
+        }
+
+        .register button {
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(13, 184, 7);
+            cursor: pointer;
+            display: block;
+            padding: 10px 20px;
+            margin: auto;
+        }
+
+        .register a {
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .right p {
+            text-align: center;
+        }
+
+        .right p:last-child a:last-child {
+            color: rgb(0, 0, 0);
+        }
+
+        .right p:last-child {
+            margin-top: 28px;
+        }
+
+        .pass a {
+            color: blue;
+        }
+
+        input:focus {
+            box-shadow: 0px 0px 1px 1px rgba(0, 153, 255, 0.336);
+        }
+
+        .right p a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0.1px solid rgb(224, 224, 224);
+        }
+
+        .footer {
+            margin: 0 14%;
+        }
+
+        .language i {
+            color: gray;
+        }
+
+        .service i {
+            color: rgba(41, 41, 172, 0.856);
+        }
+
+        li button {
+            border: 1px solid rgb(187, 187, 187);
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            padding: 0;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .language li {
+            padding-right: 12px;
+        }
+
+        .service li {
+            padding-right: 16px;
+
+        }
+
+        .footer a,
+        .footer p {
+            color: #8c8c8c;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        @media(max-width: 800px) {
+
+            .index {
+                padding: 10vh 5vh 20vh 5vh;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .left {
+                text-align: center;
+            }
+
+            .login {
+                margin-top: 20px;
+            }
+
+            .footer {
+                margin-top: 0;
+                padding: 0vh 5vh;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+
+        <div class="index">
+            <div class="content">
+                <div class="left">
+                    <div class="logo">facebook</div>
+                    <h2>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+                </div>
+
+                <div class="right">
+
+                    <div class="login">
+
+                        <form action="">
+                            <input type="text" name="email" placeholder="อีเมล์หรือหมายเลขโทรศัพท์มือถือ">
+                            <input type="password" name="password" placeholder="รหัสผ่าน">
+                            <input type="submit" value="เข้าสู่ระบบ">
+                        </form>
+
+                        <p class="pass"><a href="#">ลืมรหัสผ่านใช่หรือไม่</a></p>
+                        <hr>
+
+                        <div class="register">
+                            <button><a href="#">สร้างบัญชีใหม่</a></button>
+                        </div>
+                    </div>
+
+                    <p> <a href="#"><strong>สร้างเพจ</strong> </a>
+                        สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <ul class="language">
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">English (UK)</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文(简体)</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><button type="button" onclick=""> <i class="fas fa-plus"></i> </button></li>
+
+            </ul>
+
+            <hr>
+
+            <ul class="service">
+                <li><a href="#">สมัคร</a></li>
+                <li><a href="#">เข้าสู่ระบบ</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">ผู้คน</a></li>
+                <li><a href="#">เพจ</a></li>
+                <li><a href="#">หมวดหมู่เพจ</a></li>
+                <li><a href="#">สถานที่</a></li>
+                <li><a href="#">เกม</a></li>
+                <li><a href="#">ตำแหน่งที่ตั้ง</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook Pay</a></li>
+                <li><a href="#">กลุ่ม</a></li>
+                <li><a href="#">งาน</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">ในพื้นที่</a></li>
+                <li><a href="#">โครงการระดมทุน</a></li>
+                <li><a href="#">บริการ</a></li>
+                <li><a href="#">ศูนย์ข้อมูลการลงคะแนนเสียง</a></li>
+                <li><a href="#">เกี่ยวกับ</a></li>
+                <li><a href="#">สร้างโฆษณา</a></li>
+                <li><a href="#">สร้างเพจ</a></li>
+                <li><a href="#">ผู้พัฒนา</a></li>
+                <li><a href="#">ร่วมงานกับ Facebook</a></li>
+                <li><a href="#">ความเป็นส่วนตัว</a></li>
+                <li><a href="#">คุกกี้</a></li>
+                <li><a href="#">ตัวเลือกโฆษณา <i class="fas fa-exclamation-triangle"></i></a></li>
+                <li><a href="#">เงื่อนไข</a></li>
+                <li><a href="#">ความช่วยเหลือ</a></li>
+            </ul>
+            <p>Facebook © 2021</p>
+        </div>
+    </div>
 </body>
+
 </html>

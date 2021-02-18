@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Switch Cases</title>
+    <style>
+        div {
+            padding-top: 20vh;
+            width: 800px;
+            margin: auto;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="changeIfElse()"> 1.แปลง Code เป็น if-else </button>
+        <button onclick="changeSwitch()"> 2.แปลง Code เป็น Switch cases </button>
+    </div>
+
+    <script>
+        //1.แปลง Code ดังกล่าวเป็น if-else statement
+        function changeIfElse() {
+            let a = prompt(' Browser ที่คุณใช้งานอยู่ คือ ? .....');
+
+
+            if (a === 'Edge') {
+
+                alert(" You've got the Edge! ");
+
+            }
+            else if (a === 'Chrome' || a === 'Firefox' || a === 'Safari' || a === 'Opera') {
+
+                alert(' Okey we support these broeser too ');
+
+            }
+            else {
+
+                alert(' We hope that this page looks ok! ');
+
+            }
+        }
+
+        //2.แปลง Code ดังกล่าวเป็น Switch cases
+        function changeSwitch() {
+            let a = +prompt('a?', '');
+            switch (a) {
+                case 0:
+                    alert(0);
+                    break;
+
+                case 1:
+                    alert(1);
+                    break;
+
+                case 2:
+                case 3:
+                    alert('2,3');
+                    break;
+
+                default:
+                    alert('ไม่ตรงกับเคสใดๆ');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

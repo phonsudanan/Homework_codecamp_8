@@ -16,65 +16,76 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
-        .shop {
-            grid-column: 1 / span 2;
-            grid-row: 1;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .delivery {
-            grid-column: 1 / span 2;
-            grid-row: 6;
-        }
-
-        .submit {
-            grid-column: 1 / span 2;
-            grid-row: 7;
-        }
-
-        .PizzaForm form {
-            display: grid;
-            width: 500px;
+        .pizza {
             margin: auto;
-            padding-top: 20px;
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        textarea {
-            display: block;
-            width: 490px;
+        .shop {
+            margin-top: 10vh;
+            text-align: center;
+            width: 100%;
         }
 
-        .PizzaForm div {
+        form>div {
             border: 2px double grey;
-            padding: 5px 3px;
+            padding: 6px 3px;
         }
 
         input[type=text],
         select {
             width: 170px;
         }
+
+        .left {
+            width: 30%;
+        }
+
+        .right {
+            width: 70%;
+        }
+
+        .right>span {
+            display: block;
+        }
+
+        .submit,
+        .delivery,
+        textarea {
+            width: 100%;
+        }
+
+        input[type=submit] {
+            width: 120px;
+            padding: 3px;
+        }
+
+        .topping {
+            padding-top: 22px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="PizzaForm">
-        <form action="">
-            <div class="shop"><label for=""><strong>Pizza Shop 2.0</strong></label></div>
+    <div class="pizzaForm">
+        <form class="pizza" action="">
+            <div class="shop"><strong>Pizza Shop 2.0</strong></div>
 
-            <div><label for="">Name</label></div>
-            <div><input type="text"></div>
+            <div class="left"><label for="fname">Name</label></div>
+            <div class="right"><input id="fname" name="name" type="text"></div>
 
-            <div><label for="">Pizza Topping</label></div>
-            <div>
-                <input type="radio" name="topping" value="supreme"> Supreme
-                <input type="radio" name="topping" value="vegetarian"> Vegetarian
-                <input type="radio" name="topping" value="hawaiian"> Hawaiian
+            <div class="left topping"><label for="topping">Pizza Topping</label></div>
+            <div class="right">
+                <span><input type="radio" id="topping" name="topping" value="supreme"> Supreme</span>
+                <span><input type="radio" id="topping" name="topping" value="vegetarian"> Vegetarian</span>
+                <span><input type="radio" id="topping" name="topping" value="hawaiian"> Hawaiian</span>
             </div>
 
-            <div><label for="">Pizza Sauce</label></div>
-            <div>
-                <select name="sauce" id="">
+            <div class="left"><label for="sauce">Pizza Sauce</label></div>
+            <div class="right">
+                <select name="sauce" id="sauce">
                     <option value="tomato"> Tomato</option>
                     <option value="barbeque"> Barbeque</option>
                     <option value="mayonnaise"> Mayonnaise</option>
@@ -82,15 +93,15 @@
                 </select>
             </div>
 
-            <div><label for="">Optional Extras</label></div>
-            <div>
-                <input type="checkbox" name="extra_cheese" value="1"> Extra Cheese
-                <input type="checkbox" name="gluten_free" value="1"> Gluten Free Base
+            <div class="left"><label for="optional">Optional Extras</label></div>
+            <div class="right">
+                <input type="checkbox" id="optional" name="optional" value="extra_cheese"> Extra Cheese
+                <input type="checkbox" id="optional" name="optional" value="gluten_free"> Gluten Free Base
             </div>
 
             <div class="delivery">
-                <label for="">Delivery Instructions : </label>
-                <textarea name="" id="" cols="50" rows="4"></textarea>
+                <label for="delivery">Delivery Instructions : </label>
+                <textarea id="delivery" name="delivery" cols="100" rows="5"></textarea>
             </div>
 
             <div class="submit">
@@ -99,6 +110,7 @@
 
         </form>
     </div>
+
 </body>
 
 </html>

@@ -15,36 +15,43 @@
         table {
             border-collapse: collapse;
             /* table-layout: fixed; */
-            width: 100%;
+            width: 50%;
+            margin: auto;
         }
 
         th {
-            height: 30px;
+            padding: 10px 15px;
+            height: 35px;
             font-size: 18px;
             background-color: LightBlue;
         }
 
-        td {
+        td{
             padding: 10px 15px;
             vertical-align: top;
         }
 
-        @media only screen and (max-width: 550px) {
-            .container {
-                grid-template-columns: auto;
-            }
+        tr:nth-child(even) {
+            background-color: rgba(178, 224, 240, 0.322);
         }
 
-        @media only screen and (min-width: 561px) and (max-width: 840) {
-            .container {
-                grid-template-columns: repeat(2, auto);
-            }
-        }
+        @media(max-width: 700px) {
 
-        @media only screen and (min-width: 841px) {
-            .container {
-                grid-template-columns: repeat(3, auto);
+            table th:last-child,td:last-child{
+                display: none;
+
             }
+
+            table th:first-child,td:first-child{
+                border: none;
+            }
+
+            table{
+                width: 100%;
+                border: none;
+                text-align: left;
+            }
+
         }
     </style>
 </head>

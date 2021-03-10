@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Methods ของ Object</title>
+</head>
+
+<body>
+
+    <script>
+        //ข้อ 1 ได้ Error
+        //ข้อ 2 ได้ name = John, ref = windown
+
+        //ข้อ 3
+        let calculator = {
+            read() {
+                this.number1 = +prompt("Insert number 1 :");
+                this.number2 = +prompt("Insert number 2 :");
+            },
+            sum() {
+                return this.number1 + this.number2;
+            },
+            mul() {
+                return this.number1 * this.number2;
+            }
+        };
+
+        //ข้อ 4
+        let ladder = {
+            step: 0,
+            up() {
+                this.step++;
+                return this;
+            },
+            down() {
+                this.step--;
+                return this;
+            },
+            showStep: function () {
+                alert(this.step);
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>

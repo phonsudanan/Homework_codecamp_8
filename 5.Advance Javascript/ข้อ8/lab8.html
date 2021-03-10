@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise String</title>
+</head>
+
+<body>
+    <script>
+        function ucFirst(str) {
+            return str[0].toUpperCase() + str.slice(1);
+        }
+
+        function checkSpam(str) {
+            let a = str.indexOf('xxx')
+            let b = str.indexOf('viagra')
+            return (a === -1 && b === -1) ? false : true;
+        }
+
+        function truncate(str, maxlength) {
+            return (str.length > maxlength) ? console.log(str.slice(0, maxlength) + '...') : console.log(str.slice(0))
+        }
+
+        function extractCurrencyValue(string, rate) {
+            return parseFloat(string) * rate;
+        }
+    </script>
+</body>
+
+</html>

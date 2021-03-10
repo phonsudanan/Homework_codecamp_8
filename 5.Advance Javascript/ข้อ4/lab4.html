@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Object</title>       
+</head>
+
+<body>
+    
+
+    <script>
+        //ข้อ 1
+            let blank = {};
+            blank.name = 'Sonter';
+            blank.sername = 'Pakorn';
+            blank.name = 'Boy';
+            delete blank.name;
+        
+        //ข้อ 2
+        function isEmpty(obj) {
+            for (let key in obj) {
+                return false;
+            }
+            return true;
+        }
+        
+        //ข้อ 3  ไม่ Error
+
+        //ข้อ 4
+        function sum(obj) {
+            let total = 0;
+            for (let key in obj) {
+                total += obj[key];
+            }
+            return total;
+        }
+        //ข้อ 5
+        function multiplyNumeric(obj, times) {
+            for (let key in obj) {
+                if (typeof obj[key] !== 'number') continue;
+                obj[key] *= times
+            }
+        }
+
+    </script>
+</body>
+
+</html>

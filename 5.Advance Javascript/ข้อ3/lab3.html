@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Computed Properties</title>
+    <style>
+        div {
+            padding-top: 20vh;
+            width: 500px;
+            margin: auto;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="fruit()"> ผลไม้ </button>
+        <button onclick="fruits()"> ผลไม้ มากกว่า 1 ผล เติม s </button>
+    </div>
+
+    <script>
+        function fruit() {
+            let key = prompt('Fruits name');
+            let obj = {};
+            while (key !== 'stop') {
+                let value = prompt('number');
+                obj[key] = value;
+                key = prompt('name');
+            }
+            console.log(obj);
+        }
+
+        function fruits() {
+            let key = prompt(`Fruit's name`);
+            let obj = {};
+            while (key !== 'stop') {
+                let value = prompt(`number ${key}`);
+                if (+value > 1) {
+                    key = key + 's';
+                }
+                obj[key] = value;
+                key = prompt('name');
+            }
+            console.log(obj);
+        }
+    </script>
+</body>
+
+</html>

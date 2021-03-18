@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Array</title>
 </head>
+
 <body>
     <script>
-        //ข้อ 1 1. ผลลัพธ์ของความยาว array คือ 2
-        
+        //ข้อ 1 1. ผลลัพธ์ของความยาว array คือ 4
+
+        /*9.2. ให้ทำตามขั้นตอนต่อไปนี้
+            - สร้าง array ชื่อ styles ที่มี items ชื่อ “Jazz” และ “Blues”
+            - เพิ่ม “Rock - n - Roll” ต่อท้าย
+            - นำค่า Classics ไปทับค่าตรงกลางของ Array
+            - นำ items ตัวแรกออกมาและลบ items ตัวนั้นออกจาก array
+            - เพิ่ม “Rap” และ “Reggae” ไปข้างหน้าของ Array*/
+
+        let styles = ['jazz', 'blues'];
+        styles.push('Rock-n-Roll')
+        styles.splice(1, 1, 'Classics')
+        let a = styles.shift();
+        styles.unshift('Rap', 'Reggae');
+
+        /*9.3.เขียนฟังก์ชัน sumInput() ที่
+            - ใช้ propmt รับ value มาเก็บใน array
+            - หยุดถามเมื่อเจอค่าที่ไม่ใช่ ตัวเลข
+            - คำนวณผลรวมของตัวเลขทั้งหมดใน Array*/
+
+        function sumInput() {
+            let sum = 0;
+            let arr = [];
+            while (true) {
+                let value = +prompt('ใส่ตัวเลข');
+                if (isNaN(value)) break;
+                sum += value;
+                arr.push(value);
+            }
+            console.log(sum);
+        }
+
+        /*9.4. Maximal contiguous subarray(** Optional **)
+            - ให้เขียนฟังก์ชัน getMaxSubSum(arr) ที่ return ผลรวมของ subarray ที่มากที่สุดที่ติดกัน*/
+
+        function getMaxSubSum(arr) {
+            let arrMax = []
+            let max = 0
+
+            for (let a = 0; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 0; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 1; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 1; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 2; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 2; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 3; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 3; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 4; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 4; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 5; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 5; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 6; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 6; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 7; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 7; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 8; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 8; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 9; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 9; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let a = 10; a < arr.length; a++) {
+                let summ = 0;
+                for (let b = 10; b <= a; b++) {
+                    summ += arr[b]
+                }
+                arrMax.push(summ)
+            }
+
+            for (let i = 0; i < arrMax.length; i++) {
+                if (arrMax[i] > max) {
+                    max = arrMax[i];
+                }
+            }
+            return (max);
+        }
+
+
+
     </script>
 </body>
+
 </html>

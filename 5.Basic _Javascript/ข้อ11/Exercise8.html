@@ -61,6 +61,7 @@
     <p id='p1'></p>
 
     <script>
+        
         let n = +prompt('ใส่ตัวเลข ...... ');
 
         function draw1() {
@@ -111,23 +112,23 @@
         }
 
         function draw6() {
-            for (let a = 1; a <= (n * n); a++) {
-                document.querySelector('#p1').innerHTML += a
+            let number = 1;
+            for (let a = 1; a <= n; a++) {
                 for (let b = 1; b <= n; b++) {
-                    if (a === (n * b))
-                        document.querySelector('#p1').innerHTML += '<br>'
+                    document.querySelector('#p1').innerHTML += number++
                 }
+                document.querySelector('#p1').innerHTML += '<br>'
             }
             document.querySelector('#p1').innerHTML += '<br>'
         }
 
         function draw7() {
-            for (let a = (n * n); a >= 1; a--) {
-                document.querySelector('#p1').innerHTML += a
-                for (let b = n; b >= 1; b--) {
-                    if (a === (n * b) - (n - 1))
-                        document.querySelector('#p1').innerHTML += '<br>'
+            let number = n * n;
+            for (let a = 1; a <= n; a++) {
+                for (let b = 1; b <= n; b++) {
+                    document.querySelector('#p1').innerHTML += number--
                 }
+                document.querySelector('#p1').innerHTML += '<br>'
             }
             document.querySelector('#p1').innerHTML += '<br>'
         }
@@ -287,18 +288,25 @@
         }
 
         function draw20() {
+            let number = 1;
             for (let a = 1; a <= (n * 2) - 1; a++) {
                 for (let b = 0; b < (n - a) || b < (a - n); b++) {
                     document.querySelector('#p1').innerHTML += '-'
                 }
+                if (a <= n) {
+                    for (let c = 0; c < a; c++) {
+                        document.querySelector('#p1').innerHTML += number++
+                    }
+                }
+                else {
+                    for (let c = a; c < (n * 2); c++) {
+                        document.querySelector('#p1').innerHTML += number++
+                    }
+                }
                 document.querySelector('#p1').innerHTML += '<br>'
             }
-
-
-
             document.querySelector('#p1').innerHTML += '<br>'
         }
-
 
         function draw21() {
             for (let a = 1; a <= n; a++) {
@@ -356,12 +364,31 @@
         }
 
         function draw24() {
-
+            let number = 1;
+            for (let a = 1; a <= (n * 2) - 1; a++) {
+                for (let b = 0; b < (n - a) || b < (a - n); b++) {
+                    document.querySelector('#p1').innerHTML += '-'
+                }
+                if (a <= n) {
+                    for (let c = 1; c < (a * 2); c++) {
+                        document.querySelector('#p1').innerHTML += number++
+                    }
+                }
+                else {
+                    for (let c = 1; c < ((n * 2) - a) * 2; c++) {
+                        document.querySelector('#p1').innerHTML += number++
+                    }
+                }
+                for (let b = 0; b < (n - a) || b < (a - n); b++) {
+                    document.querySelector('#p1').innerHTML += '-'
+                }
+                document.querySelector('#p1').innerHTML += '<br>'
+            }
             document.querySelector('#p1').innerHTML += '<br>'
         }
 
-
     </script>
+
 </body>
 
 </html>

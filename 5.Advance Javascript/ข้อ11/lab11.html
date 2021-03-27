@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Map และ Set</title>
+</head>
+
+<body>
+    <script>
+        let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O" ];
+        function unique(arr) {
+            let value = new Set(arr);
+            return value;
+        }
+
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+        function anagram(arr) {
+            let words = arr.map(v => v.toLowerCase());
+            let anagrams = {};
+
+            for (let i in words) {
+                let word = words[i];
+                let sorted = word.split('').sort().join('');
+
+                if (anagrams[sorted] != null) {
+                    anagrams[sorted].push(word);
+                }
+                else {
+                    anagrams[sorted] = [word];
+                }
+            }
+
+            let a = Object.values(anagrams);
+            let b = [];
+            for (let i = 0; i < a.length; i++) {
+                b.push(a[i][0])
+            }
+            return b;
+        }
+
+        let map = new Map();
+        map.set("name", "John");
+        let keys = Array.from(map.keys())
+        keys.push("more");
+
+    </script>
+</body>
+
+</html>
